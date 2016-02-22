@@ -1,7 +1,7 @@
 # march-madness-kaggle
-### Install the dependencies :
-* conda install pandas
-* conda install ipython
+
+### First Time Install:
+* Run the following command in terminal: ./install/install.sh
 
 ### Run the environment :
 * cd src
