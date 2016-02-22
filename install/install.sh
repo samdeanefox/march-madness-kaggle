@@ -7,7 +7,8 @@ DEPENDENCIES_FILE_PATH=$(echo $(pwd)/dependencies.txt)
 # echo $DEPENDENCIES_FILE_PATH
 
 cd ../src
-
+conda create -n march-madness-kaggle python
+source activate march-madness-kaggle
 while IFS='' read -r dependency || [[ -n "$dependency" ]] ; do
 	# echo hi
 	conda install  $dependency
