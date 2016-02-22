@@ -5,5 +5,6 @@
 
 ### Run the environment :
 * cd src
-* source activate march-madness-kaggle
-* activate march-madness-kaggle
+* source activate march-madness-kaggle [Mac]
+* activate march-madness-kaggle [Windows]
+* http://pandas.pydata.org/pandas-docs/stable/install.html
