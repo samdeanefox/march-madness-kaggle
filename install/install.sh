@@ -9,11 +9,12 @@ DATABASE_FILE_NAME=database.sqlite
 
 # create environment :
 cd ../src
-conda create -n march-madness-kaggle python
+conda create -n march-madness-kaggle --file $DEPENDENCIES_FILE_PATH python
 source activate march-madness-kaggle
-while IFS='' read -r dependency || [[ -n "$dependency" ]] ; do
-	conda install  $dependency
-done < $DEPENDENCIES_FILE_PATH
+
+#while IFS='' read -r dependency || [[ -n "$dependency" ]] ; do
+#	conda install  $dependency
+#done < $DEPENDENCIES_FILE_PATH
 cd $whereAmI
 
 # database import :
